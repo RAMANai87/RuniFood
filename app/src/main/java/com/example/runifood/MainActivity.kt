@@ -1,6 +1,5 @@
 package com.example.runifood
 
-import android.app.Dialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,8 +14,8 @@ import com.example.runifood.databinding.UpdateItemBinding
 
 @Suppress("UNCHECKED_CAST")
 class MainActivity : AppCompatActivity(), FoodAdapter.FoodEvent {
-    lateinit var binding: ActivityMainBinding
-    lateinit var myAdapter: FoodAdapter
+    private lateinit var binding: ActivityMainBinding
+    private lateinit var myAdapter: FoodAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityMainBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
