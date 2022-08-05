@@ -1,2 +1,2 @@
-# RuniFood
-This is a project that developed by Recycler View!! 
+# DuniFood
+this is a project that is a list of food which made by RecyclerView

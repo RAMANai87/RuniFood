@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:elevation="8dp"
+        android:background="@drawable/shape_topview"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <ImageView
+                android:id="@+id/btn_item_new_food"
+                app:tint="?attr/colorOnSecondary"
+                android:layout_gravity="end|center_vertical"
+                android:src="@drawable/ic_add"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_gravity="start|center_vertical"
+                android:textColor="@color/white"
+                android:fontFamily="@font/primary_bold"
+                android:textSize="24sp"
+                android:text="@string/runifood_app"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:paddingEnd="10dp"
+            android:paddingStart="8dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/shape_edittext"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_search"
+            android:textColorHint="#4E4B4B"
+            android:hint="@string/find_food"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:background="?attr/colorSurface"
+        tools:listitem="@layout/item_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
