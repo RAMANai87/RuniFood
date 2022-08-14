@@ -61,6 +61,7 @@
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:layoutAnimation="@anim/recycler"
         android:id="@+id/recyclerView"
         android:background="?attr/colorSurface"
         tools:listitem="@layout/item_recyclerview"
