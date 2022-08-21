@@ -1,16 +1,12 @@
 package com.example.runifood
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.RatingBar
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.runifood.databinding.ItemRecyclerviewBinding
+import com.example.runifood.room.Food
 import jp.wasabeef.glide.transformations.RoundedCornersTransformation as RoundedCornersTransformation
 
 class FoodAdapter(private val data: ArrayList<Food>, private val foodEvent: FoodEvent) :
@@ -38,13 +34,13 @@ class FoodAdapter(private val data: ArrayList<Food>, private val foodEvent: Food
 
             itemView.setOnClickListener {
 
-                foodEvent.onFoodclicked(data[adapterPosition], adapterPosition)
+                foodEvent.onFoodClicked(data[adapterPosition], adapterPosition)
 
             }
 
             itemView.setOnLongClickListener {
 
-                foodEvent.onFoodLongclicked(data[adapterPosition], adapterPosition)
+                foodEvent.onFoodLongClicked(data[adapterPosition], adapterPosition)
 
                 true
 
@@ -100,8 +96,8 @@ class FoodAdapter(private val data: ArrayList<Food>, private val foodEvent: Food
 
     interface FoodEvent {
 
-        fun onFoodclicked(food: Food, position: Int)
-        fun onFoodLongclicked(food: Food, pos: Int)
+        fun onFoodClicked(food: Food, position: Int)
+        fun onFoodLongClicked(food: Food, pos: Int)
 
     }
 }

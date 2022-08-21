@@ -4,6 +4,7 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 <!--    main colors-->
+    <color name="ColorNotes">#554F4F</color>
     <color name="orange">#FF5722</color>
     <color name="orange_dark">#E64A19</color>
     <color name="blue">#4FC3F7</color>
